@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Address Book</title>
+  		<link rel="stylesheet" href="./stylesheets/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1  class="animate">Address Book</h1>
+			</div>
+			<div class="contacts-list">
+				<h2>Contacts</h2>
+				<hr>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="display-contact">
+				
+			</div>
+			<div class="footer">
+				<p>Coded by 
+					<a href="https://github.com/AminuSufi585" target="_blank" class="animate">Aminu kano</a>
+				</p>
+			</div>
+		</div>
+		
+		<dialog id="contact-info">
+			<div class="dialog-header">Add Contact</div>
+			<form method="dialog">
+				<section>
+					<p>
+						<label for="name">Name:</label>
+						<input type="text" placeholder="name" class="form-field">
+					</p>
+					<p>
+						<label for="phone-no">Phone No:</label>
+						<input type="text" placeholder="phone number" class="form-field">
+					</p>
+					<p>
+						<label for="email">Email:</label>
+						<input type="email" placeholder="email" class="form-field">
+					</p>
+				</section>
+				<menu>
+					<button id="submit" type="submit">Submit</button>
+					<button id="cancel" type="cancel">Cancel</button>
+        			<button id="clear" type="reset">Reset</button>
+				</menu>
+			</form>
+		</dialog>
+
+		<dialog id="edit-info">
+			<div class="dialog-header">Edit Contact</div>
+			<form method="dialog">
+				<section>
+					<p>
+						<label for="name">Name:</label>
+						<input type="text" placeholder="name" class="form-field">
+					</p>
+					<p>
+						<label for="phone-no">Phone No:</label>
+						<input type="text" placeholder="phone number" class="form-field">
+					</p>
+					<p>
+						<label for="email">Email:</label>
+						<input type="email" placeholder="email" class="form-field">
+					</p>
+				</section>
+				<menu>
+					<button id="submit" type="submit">Edit</button>
+					<button id="cancel" type="cancel">Cancel</button>
+				</menu>
+			</form>
+		</dialog>
+
+		<dialog id="delete-info">
+			<div class="dialog-header">Delete Contact</div>
+			<form method="dialog">
+				<h3>Delete Contact?</h3>
+				<menu>
+					<button id="submit" type="submit">Delete</button>
+					<button id="cancel" type="cancel">Cancel</button>
+				</menu>
+			</form>
+		</dialog>
+
+	    <script src="./scripts/script.js"></script>
+	</body>
+</html>
